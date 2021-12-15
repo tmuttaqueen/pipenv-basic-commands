@@ -35,10 +35,16 @@ pipenv --rm
 
 ### After activating a environment
 
-#### Installing a package
+#### Installing/Uninstalling a package
 ```
 pipenv install numpy
 pipenv install numpy==1.19.5
+pipenv install numpy~=1.19    // pipenv will install the latest version of 1.*
+pipenv install --dev numpy    // only install in development
+pipenv uninstall numpy        // uninstall any version of numpy 
+pipenv uninstall --dev numpy  // uninstall from development 
+pipenv uninstall --all        // uninstall all packages
+pipenv uninstall --all-dev    // uninstall all package from development
 ```
 
 #### Installing package from requirements.txt file
