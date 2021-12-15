@@ -10,18 +10,30 @@ pip3 install pipenv
 
 #### Installing pipenv windows
 ```
-pip3 install pipenv
+pip install pipenv
 ```
 
-#### Creating an environment inside a project folder with python version specified
+#### Creating an environment and installing packages when Pipfile already exists ( pwd is the project folder )
+```
+pipenv install
+```
+
+#### Creating an environment for a project with python version specified ( pwd is the project folder )
 ```
 pipenv --python 3.6
+```
+
+#### Activate an environment ( pwd is the project folder )
+```
+pipenv shell
 ```
 
 #### Removing an existing environment in a project folder ( pwd is the project folder )
 ```
 pipenv --rm
 ```
+
+### After activating a environment
 
 #### Installing a package
 ```
