@@ -57,3 +57,7 @@ pipenv install -r requirements.txt
 pipenv graph
 ```
 
+#### pipenv shell spawns a new shell. To exit pipenv shell, just type exit
+```
+exit
+```
